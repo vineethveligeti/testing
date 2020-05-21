@@ -24,4 +24,3 @@ pipeline {
         }
     }
 }
-© 2020 GitHub, Inc.
