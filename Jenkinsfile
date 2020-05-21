@@ -4,9 +4,12 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Hello World'
-                echo env.CHANGE_ID
-                echo env.GIT_BRANCH
-                echo env.BRANCH_NAME
+                echo "CHANGE_ID : $CHANGE_ID"
+                echo "GIT_BRANCH : $GIT_BRANCH" 
+                echo "BRANCH_NAME : $BRANCH_NAME" 
+                echo "GIT_URL : $GIT_URL" 
+                echo "GIT_COMMIT : $GIT_COMMIT" 
+                echo "GIT_REVISION : $GIT_REVISION" 
             }
         }
         stage('Test') { 
@@ -21,3 +24,4 @@ pipeline {
         }
     }
 }
+© 2020 GitHub, Inc.
