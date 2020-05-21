@@ -4,7 +4,6 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Hello World'
-                echo "CHANGE_ID : $CHANGE_ID"
                 echo "GIT_BRANCH : $GIT_BRANCH" 
                 echo "BRANCH_NAME : $BRANCH_NAME" 
                 echo "GIT_URL : $GIT_URL" 
