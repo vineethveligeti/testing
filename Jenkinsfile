@@ -7,8 +7,7 @@ pipeline {
                 echo "GIT_BRANCH : $GIT_BRANCH" 
                 echo "BRANCH_NAME : $BRANCH_NAME" 
                 echo "GIT_URL : $GIT_URL" 
-                echo "GIT_COMMIT : $GIT_COMMIT" 
-                echo "GIT_REVISION : $GIT_REVISION" 
+                echo "GIT_COMMIT : $GIT_COMMIT"
             }
         }
         stage('Test') { 
