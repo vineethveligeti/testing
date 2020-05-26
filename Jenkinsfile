@@ -8,6 +8,7 @@ pipeline {
                 echo "BRANCH_NAME : $BRANCH_NAME" 
                 echo "GIT_URL : $GIT_URL" 
                 echo "GIT_COMMIT : $GIT_COMMIT"
+                bat "pylint"
             }
         }
         stage('Test') { 
